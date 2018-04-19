@@ -32,7 +32,7 @@ module.exports = {
    },
    plugins: [new Webpack.HotModuleReplacementPlugin()],
    output: {
-      filename: 'bundle.js',
+      filename: 'main.js',
       path: path.resolve(__dirname, 'dist'),
       publicPath: ServePath,
    },
