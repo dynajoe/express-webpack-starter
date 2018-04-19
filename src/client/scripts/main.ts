@@ -1,6 +1,7 @@
 import Elm from '../elm/app.elmproj'
-import * as _ from 'lodash'
 
-export function foo() {
-   console.log(Elm, _.find([1], 1))
-}
+const elm_root = document.createElement('div')
+
+document.body.appendChild(elm_root)
+
+Elm.Components.WidgetA.embed(elm_root)
