@@ -19,10 +19,16 @@ module.exports = {
             use: 'ts-loader',
             exclude: /node_modules/,
          },
+         {
+            test: /\.elmproj$/,
+            loaders: ['elm-hot-loader', 'elm-webpack-project-loader'],
+         },
       ],
+
+      noParse: /\.elmproj$/,
    },
    resolve: {
-      extensions: ['.tsx', '.ts', '.js'],
+      extensions: ['.tsx', '.ts', '.js', '.elmproj'],
    },
    plugins: [new Webpack.HotModuleReplacementPlugin()],
    output: {
