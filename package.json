@@ -1,0 +1,27 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^9.6.5",
+    "express": "^4.16.3",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.107",
+    "ts-loader": "^4.2.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-middleware": "^3.1.2",
+    "webpack-hot-middleware": "^2.22.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -p ./src/server/tsconfig.json && node ./src/server/index.js",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC"
+}
